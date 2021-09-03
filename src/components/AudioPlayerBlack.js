@@ -13,7 +13,7 @@ const Container = styled.div`
     `
 
 function AudioPlayer() {
-    const [loop, setLoop] = useState('loop1.mp3')
+    const [loop, setLoop] = useState('loop1black.mp3')
 
 
     const audioRef = useRef()
@@ -26,15 +26,15 @@ function AudioPlayer() {
             audioRef.current.load();
             audioRef.current.play();
             console.log(loop)
-            if(drumLoop === "loop1.mp3") {
-                audioRef.current.playbackRate = 1
-            } else if (drumLoop === "loop2.mp3") {
-                audioRef.current.playbackRate = .97
-            } else if (drumLoop === "loop3.mp3") {
-                audioRef.current.playbackRate = .8
-            } else if (drumLoop === "loop4.mp3") {
-                audioRef.current.playbackRate = 1.02
-            }
+            // if(drumLoop === "loop1.mp3") {
+            //     audioRef.current.playbackRate = 1
+            // } else if (drumLoop === "loop2.mp3") {
+            //     audioRef.current.playbackRate = .97
+            // } else if (drumLoop === "loop3.mp3") {
+            //     audioRef.current.playbackRate = .8
+            // } else if (drumLoop === "loop4.mp3") {
+            //     audioRef.current.playbackRate = 1.02
+            // }
         }
         }
     const stopLoop = () => {
@@ -48,10 +48,7 @@ function AudioPlayer() {
         <Container>
             <div>
                 <select name="loop" id="loop" value={loop} onChange={(e) => updateLoop(e.target.value, e.target.id)} style={{margin: "6px"}}>
-                    <option value="loop1.mp3">Loop 1</option>
-                    <option value="loop2.mp3">Loop 2</option>
-                    <option value="loop3.mp3">Loop 3</option>
-                    <option value="loop4.mp3">Loop 4</option>
+                    <option value="loop1black.mp3">Loop 1</option>
                 </select>
 
             </div>

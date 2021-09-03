@@ -23,55 +23,55 @@ const samples = [
     {
         name: 'Heater-1',
         key: 'Q',
-        audio: new Audio('pad1sample1.mp3')
+        audio: new Audio('padblacksample1.mp3')
        },
        
        {
          name: 'Heater-2',
          key: 'W',
-         audio: new Audio('pad1sample2.mp3')
+         audio: new Audio('padblacksample2.mp3')
        },
        
        {
          name: 'Heater-3',
          key: 'E',
-         audio: new Audio('pad1sample3.mp3')
+         audio: new Audio('padblacksample3.mp3')
        },
        
        {
          name: 'Heater-4',
          key: 'A',
-         audio: new Audio('pad1sample4.mp3')
+         audio: new Audio('padblacksample4.mp3')
        },
        
        {
          name: 'Clap' ,
          key: 'S',
-         audio: new Audio('pad1sample5.mp3')
+         audio: new Audio('padblacksample5.mp3')
        },
        
        {
          name: 'Open-HH',
          key: 'D',
-         audio: new Audio('pad1sample6.mp3')
+         audio: new Audio('padblacksample6.mp3')
        },
        
        {
          name: "Kick-'n-Hat",
          key: 'Z',
-         audio: new Audio('[808] Coldest 808.mp3')
+         audio: new Audio('padblacksample7.mp3')
        },
        
        {
          name: 'Kick',
          key: 'X',
-         audio: new Audio('[KICK] Video.mp3')
+         audio: new Audio('padblacksample8.mp3')
        },
        
        {
          name: 'Closed-HH',
          key: 'C',
-         audio: new Audio('[VOX] Uhh.mp3')
+         audio: new Audio('padblacksample9.mp3')
        }
 ]
 function Pads() {
