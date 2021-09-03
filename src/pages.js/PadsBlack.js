@@ -59,7 +59,7 @@ const samples = [
        {
          name: "Kick-'n-Hat",
          key: 'Z',
-         audio: new Audio('padblacksample7.mp3')
+         audio: new Audio('itDepends.mp3')
        },
        
        {

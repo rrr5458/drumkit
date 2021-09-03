@@ -29,43 +29,43 @@ function App() {
   return (
     <Router>
       <Provider store={store}>
-      <div className="App">
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/green">
-          <Header style={{height: "110px"}}/>
-            <Pad1Div>
-              <AudioPlayer />
-              <Pads />
-              <Recorder />
-            </Pad1Div>
-          </Route>
-          <Route exact path="/black">
-          <Header style={{height: "110px"}}/>
-            <Pad2Div>
-              <AudioPlayerBlack />
-              <PadsBlack />
+        <div className="App">
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route exact path="/green">
+              <Header style={{ height: "110px" }} />
+              <Pad1Div>
+                <AudioPlayer />
+                <Pads />
+                <Recorder />
+              </Pad1Div>
+            </Route>
+            <Route exact path="/black">
+              <Header style={{ height: "110px" }} />
+              <Pad2Div>
+                <AudioPlayerBlack />
+                <PadsBlack />
               </Pad2Div>
-          </Route>
-          <Route exact path="/yellow">
-          <Header style={{height: "110px"}}/>
-          <Pad3Div>
-              <AudioPlayer />
-              <Pads />
+            </Route>
+            <Route exact path="/yellow">
+              <Header style={{ height: "110px" }} />
+              <Pad3Div>
+                <AudioPlayer />
+                <Pads />
               </Pad3Div>
-          </Route>
-          <Route exact path="/pink">
-          <Header style={{height: "110px"}}/>
-          <Pad4Div>
-              <AudioPlayer />
-              <Pads />
-            </Pad4Div>
-          </Route>
-        </Switch>
+            </Route>
+            <Route exact path="/pink">
+              <Header style={{ height: "110px" }} />
+              <Pad4Div>
+                <AudioPlayer />
+                <Pads />
+              </Pad4Div>
+            </Route>
+          </Switch>
 
-      </div>
+        </div>
       </Provider>
     </Router>
   );
