@@ -1,38 +1,154 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  margin: 0;
+  font-family: "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #343a40;
+  background-color: #fd9800;
+  text-align: left;
+
 }
 
-.App-link {
-  color: #61dafb;
+p {
+  padding: 3px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+  height: 100px;
+  width: 100px;
+}
+
+.navbar {
+  height: 90px;
+}
+
+.audio-buttons {
+  border: 2px solid #333;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #fff;
+  margin: 6px;
+  height: 100px;
+  width: 100px;
+  margin: 6px;
+}
+
+.audio-buttons-black {
+  border: 2px solid #83ff4a;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #fff;
+  margin: 6px;
+  height: 100px;
+  width: 100px;
+  margin: 6px;
+}
+
+select {
+  border: 2px solid #333;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #fff;
+  margin: 6px;
+  height: 100px;
+  width: 100px;
+  margin: 6px;
+}
+
+.bg-gradient {
+  background-color:#fd9800;
+  height: 100% 
+}
+
+.heading-brand {
+  font-size: 45px;
+}
+
+#drum-machine {
+  height: calc(100vh - 222px);
+}
+.boxes-links {
+  height: 500px;
+  width: 500px;
+
+}
+
+.box1 {
+  background-color: #83ff4a;
+  
+
+}
+.box1:hover {
+  background-image: url("./green.png");
+  background-size:cover;
+}
+.box2 {
+  background-color: #000000;
+
+}
+.box2:hover {
+  background-image: url("./black.png");
+  background-size: cover;
+}
+
+.box3 {
+  background-color: #fbff0e;
+}
+.box3:hover {
+  background-image: url("./yellow.png");
+  background-size: cover;
+}
+
+.box4 {
+  background-color: #fd56bd;
+}
+
+.box4:hover {
+  background-image: url("./pink.png");
+  background-size: cover;
+}
+
+.boxes-links-header {
+  height: 50px;
+  width: 50px;
+
+}
+
+.box1header {
+  background-color: #83ff4a;
+  
+
+}
+.box2header {
+  background-color: #000000;
+
+}
+.box3header {
+  background-color: #fbff0e;
+ 
+
+}
+.box4header {
+  background-color: #fd56bd;
+
+}
+
+.box-home {
+  height: 50px;
+  width: 50px;
+  background: #fd9800;
+}
+
+.pad-b:hover {
+  background-color: antiquewhite;
+}
+
+.pad-active-b {
+  background-color: antiquewhite!important;
 }
