@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {useDispatch, useSelector} from 'react-redux'
 import styled from "styled-components";
 import Pad from "../components/Pad"
@@ -70,15 +70,6 @@ function Pads() {
     const dispatch = useDispatch()
     const volumeLevel = useSelector(state => state.volumeLevel)
 
-    const [dogImage, setDogImage] = useState('')
-
-    const fetchDogImage = () => {
-        fetch('https://dog.ceo/api/breeds/image/random')
-            .then(res => res.json())
-            .then(data => {
-                setDogImage(data.message)
-            })
-      }
     
     const stopSound = () => {
       samples.forEach(sample => {
@@ -87,7 +78,6 @@ function Pads() {
       })
     }
     const playSound = (audio) => {
-      fetchDogImage()
       stopSound()
       audio.play()
       audio.volume = volumeLevel
@@ -102,9 +92,6 @@ function Pads() {
                     })}  
                 <input type="range" step=".01" onChange={(e) => dispatch(setVolume(e.target.value))} value={volumeLevel}  max="1" min="0"/>
             </Display>
-            <div>
-              <img src={dogImage} alt="random-dog"/>
-            </div>
         </Container>
     )
 }
